@@ -25,6 +25,11 @@ public class EmpController {
         return empService.addEmp();
     }
     
+    @GetMapping("/addEmployeeBulk")
+    public String addNewEmployeeBulk(){
+        return empService.addEmpBulk(null);
+    }
+        
     @GetMapping("/getEmployee")
     public List<Employee> getEmp(){
         return empService.getEmp();

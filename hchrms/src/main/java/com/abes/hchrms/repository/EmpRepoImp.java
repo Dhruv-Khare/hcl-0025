@@ -16,6 +16,18 @@ public class EmpRepoImp implements EmpRepo {
         employees.add(employee);
         return "Employee added successfully!";
     }
+    
+    @Override
+    public String addEmpBulk(List<Employee> employees) {
+        // this.employees.addAll(employees);
+        List<Employee> empList =List.of(
+            new Employee(1, "John Doe", "Software Engineer", "Java", "john.doe@example.com"),
+            new Employee(2, "Jane Smith", "Data Scientist", "Python", "jane.smith@example.com"),
+            new Employee(3, "Bob Johnson", "DevOps Engineer", "Docker", "bob.johnson@example.com")
+        );
+        this.employees.addAll(empList);
+        return "Employees added successfully!";
+    }
 
     @Override
     public List<Employee>  getEmp() {

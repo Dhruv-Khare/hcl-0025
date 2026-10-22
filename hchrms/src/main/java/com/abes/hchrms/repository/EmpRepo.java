@@ -8,6 +8,7 @@ import java.util.List;
 @Repository
 public interface EmpRepo {
     String addEmp(Employee employee);
+    String addEmpBulk(List<Employee> employees);
     List<Employee> getEmp();
     Employee getEmpByID(long emp_id);
     String deleteEmpById(long emp_id);

@@ -17,6 +17,10 @@ public class EmpServiceImp {
         return empRepo.addEmp(employee);
     }
     
+    public String addEmpBulk(List<Employee> employees){
+        return empRepo.addEmpBulk(employees);
+    }
+    
     public List<Employee> getEmp(){
         return empRepo.getEmp();
     }
