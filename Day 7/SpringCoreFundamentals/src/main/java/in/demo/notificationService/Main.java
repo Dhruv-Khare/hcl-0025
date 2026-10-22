@@ -9,7 +9,7 @@ public class Main {
         Student student1 = context.getBean(Student.class);
         System.out.println(student.hashCode());
         System.out.println(student1.hashCode());
-        student.notifyStudnet();
+        // student.notifyStudnet();
         context.close();
     }
 }
